@@ -14,7 +14,7 @@ logs = [
 
 def generate_logs():
     with open("logs.txt", "w") as f:
-        for _ in range(20):
+        for _ in range(10):
             log = random.choice(logs)
             f.write(log + "\n")
             time.sleep(0.1)
