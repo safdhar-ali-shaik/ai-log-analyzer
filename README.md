@@ -1,6 +1,6 @@
-# íº€ AI Log Analyzer (DevOps + AI Project)
+# ğŸš€ AI Log Analyzer (DevOps + AI Project)
 
-## í³Œ Overview
+## ğŸ“Œ Overview
 
 AI Log Analyzer is a real-time log processing system that ingests application logs, analyzes them using rule-based and AI techniques, and provides actionable insights.
 
@@ -10,7 +10,7 @@ This project simulates a **production-like DevOps pipeline**:
 
 ---
 
-## í·± Architecture
+## ğŸ§± Architecture
 
 ```
 Node.js App (Express)
@@ -38,7 +38,7 @@ Insights / Alerts
 
 ---
 
-## í³ Project Structure
+## ğŸ“ Project Structure
 
 ```
 ai-log-analyzer/
@@ -58,7 +58,7 @@ ai-log-analyzer/
 
 ---
 
-## íº€ Setup Instructions
+## ğŸš€ Setup Instructions
 
 ### 1. Clone the repository
 
@@ -129,7 +129,7 @@ curl http://localhost:3000/v1/unknown
 
 ---
 
-## í´– Run AI Log Analyzer
+## ğŸ¤– Run AI Log Analyzer
 
 In a new terminal:
 
@@ -139,7 +139,7 @@ python analyzer/run_pipeline.py
 
 ---
 
-## í³Š Example Output
+## ğŸ“Š Example Output
 
 ```
 AI OUTPUT: {'level': 'high', 'message': 'error: GET /v1/users 401'}
@@ -148,7 +148,7 @@ AI OUTPUT: {'level': 'low', 'message': 'info: GET /v1/docs 200'}
 
 ---
 
-## í´¥ Features (Current)
+## ğŸ”¥ Features (Current)
 
 * âœ… Real-time log ingestion
 * âœ… File-based logging (Winston)
@@ -157,7 +157,7 @@ AI OUTPUT: {'level': 'low', 'message': 'info: GET /v1/docs 200'}
 
 ---
 
-## íº§ Roadmap
+## ğŸš§ Roadmap
 
 * [ ] Anomaly detection (ML models)
 * [ ] REST API (FastAPI)
@@ -168,7 +168,7 @@ AI OUTPUT: {'level': 'low', 'message': 'info: GET /v1/docs 200'}
 
 ---
 
-## í·  DevOps Concepts Covered
+## ğŸ§  DevOps Concepts Covered
 
 * Log ingestion pipelines
 * Observability basics
@@ -178,7 +178,7 @@ AI OUTPUT: {'level': 'low', 'message': 'info: GET /v1/docs 200'}
 
 ---
 
-## í³Œ Author
+## ğŸ“Œ Author
 
 **Safdhar Ali Shaik**
 
