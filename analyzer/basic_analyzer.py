@@ -1,36 +1,43 @@
-import requests
+def analyze_log(log):
+    log = log.lower()
 
-def analyze_logs(log_text):
-    url = "http://localhost:11434/api/generate"
+    if "error" in log:
+        if "auth" in log or "authenticate" in log:
+            return {
+                "type": "AUTH_ERROR",
+                "severity": "HIGH",
+                "message": log,
+                "suggestion": "Check authentication token or login flow"
+            }
 
-    prompt = f"""
-    Analyze the logs and return:
-    1. Error summary
-    2. Root cause
-    3. Suggested fix
+        elif "not found" in log:
+            return {
+                "type": "NOT_FOUND",
+                "severity": "MEDIUM",
+                "message": log,
+                "suggestion": "Check API endpoint or routing"
+            }
 
-    Logs:
-    {log_text}
-    """
+        else:
+            return {
+                "type": "GENERAL_ERROR",
+                "severity": "HIGH",
+                "message": log,
+                "suggestion": "Investigate service logs"
+            }
 
-    data = {
-        "model": "phi3",
-        "prompt": prompt,
-        "stream": False
-    }
+    elif "warn" in log:
+        return {
+            "type": "WARNING",
+            "severity": "LOW",
+            "message": log,
+            "suggestion": "Monitor this warning"
+        }
 
-    response = requests.post(url, json=data)
-
-    return response.json()["response"]
-
-
-if __name__ == "__main__":
-    with open("logs.txt", "r") as file:
-        logs = file.read()
-
-    logs = logs[:1000]
-
-    result = analyze_logs(logs)
-
-    print("\n===== AI ANALYSIS =====\n")
-    print(result)
+    else:
+        return {
+            "type": "INFO",
+            "severity": "LOW",
+            "message": log,
+            "suggestion": "No action needed"
+        }
