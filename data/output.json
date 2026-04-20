@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-04-20T12:41:14.790876",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/ 304 - 4.693 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:14.798808",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/swagger-ui.css 304 - 2.431 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:14.814335",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/swagger-ui-bundle.js 304 - 2.687 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:14.830575",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/swagger-ui-standalone-preset.js 304 - 9.584 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:14.846156",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/swagger-ui-init.js 304 - 0.383 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:15.361121",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: get /v1/docs/favicon-32x32.png 304 - 0.588 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:24.895961",
+    "type": "GENERAL_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: error: email already taken",
+    "suggestion": "Investigate service logs"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:24.912512",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at object.createuser (/datalex/node-express-boilerplate/src/services/user.service.js:12:11)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:24.928080",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at process.processticksandrejections (node:internal/process/task_queues:104:5)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:24.942655",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at async /datalex/node-express-boilerplate/src/controllers/auth.controller.js:6:16",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:24.956213",
+    "type": "AUTH_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: post /v1/auth/register 400 - 29.890 ms - message: email already taken",
+    "suggestion": "Check authentication token or login flow"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:39.995052",
+    "type": "AUTH_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: error: please authenticate",
+    "suggestion": "Check authentication token or login flow"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:40.010278",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at object.refreshauth (/datalex/node-express-boilerplate/src/services/auth.service.js:50:11)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:40.025474",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at process.processticksandrejections (node:internal/process/task_queues:104:5)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:40.039300",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at async /datalex/node-express-boilerplate/src/controllers/auth.controller.js:24:18",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:40.049465",
+    "type": "AUTH_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: post /v1/auth/refresh-tokens 401 - 3.454 ms - message: please authenticate",
+    "suggestion": "Check authentication token or login flow"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:43.562249",
+    "type": "AUTH_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: error: please authenticate",
+    "suggestion": "Check authentication token or login flow"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:43.581464",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at object.refreshauth (/datalex/node-express-boilerplate/src/services/auth.service.js:50:11)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:43.599387",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at process.processticksandrejections (node:internal/process/task_queues:104:5)",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:43.609794",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "at async /datalex/node-express-boilerplate/src/controllers/auth.controller.js:24:18",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:43.621251",
+    "type": "AUTH_ERROR",
+    "severity": "HIGH",
+    "message": "\u001b[31merror\u001b[39m: post /v1/auth/refresh-tokens 401 - 1.860 ms - message: please authenticate",
+    "suggestion": "Check authentication token or login flow"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:57.151960",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: post /v1/auth/login 200 - 50.961 ms",
+    "suggestion": "No action needed"
+  },
+  {
+    "timestamp": "2026-04-20T12:41:58.168175",
+    "type": "INFO",
+    "severity": "LOW",
+    "message": "\u001b[32minfo\u001b[39m: post /v1/auth/login 200 - 23.576 ms",
+    "suggestion": "No action needed"
+  }
+]
